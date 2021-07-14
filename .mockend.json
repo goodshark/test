@@ -1,10 +1,27 @@
 {
-  "Dir": {
+  "Dir1": {
     "name": {
       "string": {}
     },
     "size": {
       "int": { "min": 0, "max": 100000 }
+    },
+    "createdAt": {
+      "dateTime": {
+        "min": "2000-01-01T00:00:00Z",
+        "max": "2010-12-31T23:59:59Z"
+      }
+    },
+    "parent": {
+      "string": {}
+    }
+  },
+  "Dir2": {
+    "name": {
+      "string": {}
+    },
+    "size": {
+      "int": { "min": 0, "max": 99999}
     },
     "createdAt": {
       "dateTime": {
@@ -14,17 +31,6 @@
     },
     "parent": {
       "string": {}
-    },
-    "comments": {
-      "hasMany": "Comment"
-    }
-  },
-  "Comment": {
-    "body": {
-      "string": {}
-    },
-    "post": {
-      "belongsTo": "Post"
     }
   }
 }
