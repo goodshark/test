@@ -1,13 +1,10 @@
 {
-  "Post": {
-    "title": {
+  "Dir": {
+    "name": {
       "string": {}
     },
-    "views": {
-      "int": { "min": 0, "max": 9000 }
-    },
-    "published": {
-      "boolean": {}
+    "size": {
+      "int": { "min": 0, "max": 100000 }
     },
     "createdAt": {
       "dateTime": {
